@@ -41,7 +41,7 @@ Part 3: Hard Features
 
 ![Screenshot 2025-06-30 072917](https://github.com/user-attachments/assets/cf85e325-16a8-4b7a-bff9-4451479f19a6)
 
-## 🚀 How to Run the Project Locally
+##  How to Run the Project Locally
 
 ### 1. Clone the Repository
 
