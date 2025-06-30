@@ -79,7 +79,7 @@ Role-Based Authorization
 
 ```bash
 git clone [https://github.com/your-username/todo-api.git](https://github.com/shybash-shaik/week_03/edit/main/secret-quote-api/)
-cd secret-quote-api
+cd week_03/secret-quote-api
 
 2. Install Dependencies
 npm install
@@ -95,8 +95,8 @@ Authorization: Bearer <accessToken>
  Register a New User
 POST /register
 {
-  "username": "user1",
-  "password": "pass123"
+  "username": "shybash",
+  "password": "shybash123"
 }
 (Optional admin user):
 {
@@ -110,8 +110,8 @@ POST /login
 
 
 {
-  "username": "user1",
-  "password": "pass123"
+  "username": "shybash",
+  "password": "shybash123"
 }
 ✔️ Response:
 {
