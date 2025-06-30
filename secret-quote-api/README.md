@@ -1,4 +1,4 @@
-# ✅ User-Specific To-Do List API
+#  User-Specific To-Do List API
 
 A secure backend API built with **Express** and **JWT authentication** that supports:
 
@@ -11,17 +11,17 @@ A secure backend API built with **Express** and **JWT authentication** that supp
 
 ---
 
-## 🔧 Features
+##  Features
 
-- ✅ **JWT Authentication** – Access token expires in **1 hour**
-- 🔒 **Protected Routes** – All `/api/todos` endpoints require a valid Bearer token
-- 🧍‍♂️ **User-Specific To-Dos** – Each user can only manage their own tasks
-- 🛡️ **Role-Based Authorization** – Admins can access all to-dos
-- 🔐 **Secure Passwords** – Stored with `bcrypt` hashing
+-  **JWT Authentication** – Access token expires in **1 hour**
+-  **Protected Routes** – All `/api/todos` endpoints require a valid Bearer token
+-  **User-Specific To-Dos** – Each user can only manage their own tasks
+-  **Role-Based Authorization** – Admins can access all to-dos
+-  **Secure Passwords** – Stored with `bcrypt` hashing
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - Node.js
 - Express.js
@@ -30,9 +30,9 @@ A secure backend API built with **Express** and **JWT authentication** that supp
 
 ---
 
-## 📷 Screenshots
+##  Screenshots
 
-### 🟢 Easy – Auth & Protected Route
+###  Easy – Auth & Protected Route
 
 **User Register**  
 ![Register](https://github.com/user-attachments/assets/d88e6889-91b0-46d3-9038-709b65609567)
@@ -45,7 +45,7 @@ A secure backend API built with **Express** and **JWT authentication** that supp
 
 ---
 
-### 🟡 Medium – To-Do CRUD & Role Auth
+###  Medium – To-Do CRUD & Role Auth
 
 **Add To-Do**  
 ![Add Todo](https://github.com/user-attachments/assets/286cf6a5-f718-4c9e-8269-a5742ee45523)
@@ -61,7 +61,7 @@ A secure backend API built with **Express** and **JWT authentication** that supp
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the Repository
 
@@ -82,7 +82,7 @@ API Endpoints
 All /api routes require Authorization header:
 Authorization: Bearer <accessToken>
 
-🔸 Register a New User
+ Register a New User
 POST /register
 
 {
@@ -103,13 +103,13 @@ POST /login
   "username": "shybash",
   "password": "shybash123"
 }
-✔️ Response:
+ Response:
 
 {
   "accessToken": "..."
 }
 
-✅ Create a To-Do
+ Create a To-Do
 
 POST /api/todos
 {
@@ -118,19 +118,19 @@ POST /api/todos
 📄 Get User’s To-Dos
 GET /api/todos
 
-✔️ Returns only the to-dos owned by the currently logged-in user.
+ Returns only the to-dos owned by the currently logged-in user.
 
-❌ Delete a To-Do
+ Delete a To-Do
 DELETE /api/todos/:id
 
-✔️ Only allows deletion if the to-do belongs to the logged-in user.
+ Only allows deletion if the to-do belongs to the logged-in user.
 
-👑 Admin Only: View All To-Dos
+ Admin Only: View All To-Dos
 GET /api/admin/all-todos
 
-✔️ Only accessible to users with role: "admin"
+ Only accessible to users with role: "admin"
 
-🔒 How Access Control Works
+ How Access Control Works
 When a user logs in, a JWT is issued containing: id, username, and role
 
 Authentication middleware verifies the token and attaches data to req.user
@@ -146,7 +146,7 @@ Admin routes use authorizeAdmin middleware to allow only users with role: "admin
 { "task": "Read middleware documentation" }
 { "task": "Deploy app to Render" }
 { "task": "Review pull requests" }
-🧪 Testing with Postman
+ Testing with Postman
 Register a user (/register)
 
 Log in to receive a token (/login)
