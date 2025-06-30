@@ -46,8 +46,9 @@ Part 3: Hard Features
 ### 1. Clone the Repository
 
 ```bash
-1.git clone https://github.com/your-username/your-combined-repo.git
-cd your-combined-repo/recipe
+1.git clone[ https://github.com/your-username/your-combined-repo.git](https://github.com/shybash-shaik/week_03)
+
+cd week_03/recipe
 
 2. Install Dependencies
 npm install
