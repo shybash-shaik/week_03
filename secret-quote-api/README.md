@@ -1,32 +1,32 @@
-# 📝 User-Specific To-Do List API
+#  User-Specific To-Do List API
 
 A secure backend API built with **Express** and **JWT authentication** that supports:
 
-- ✅ User registration and login  
-- 🧍 User-specific to-do list management  
-- 🔐 Password hashing with `bcrypt`  
-- 🛡️ Admin-only routes via role-based access control  
+-  User registration and login  
+-  User-specific to-do list management  
+-  Password hashing with `bcrypt`  
+-  Admin-only routes via role-based access control  
 
-> 📦 No database required – uses in-memory storage for simplicity.
+>  No database required – uses in-memory storage for simplicity.
 
 ---
 
-## 🔐 Features
+##  Features
 
 - ✅ **JWT Authentication**  
   - Access token expires in **1 hour**
-- 🔒 **Protected Routes**  
+-  **Protected Routes**  
   - All `/api/todos` endpoints require a valid Bearer token
-- 🧍 **User-Specific Todos**  
+-  **User-Specific Todos**  
   - Each user can only manage their own tasks
-- 🧑‍💼 **Role-Based Authorization**  
+-  **Role-Based Authorization**  
   - Admins can access all todos
-- 🔐 **Secure Passwords**  
+-  **Secure Passwords**  
   - Stored with `bcrypt` hashing
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Node.js
 - Express.js
@@ -35,7 +35,7 @@ A secure backend API built with **Express** and **JWT authentication** that supp
 
 ---
 
-## 🎯 Difficulty
+##  Difficulty
 
 **Easy**
 User Register
@@ -50,7 +50,7 @@ Protected Route
 
 ![Screenshot 2025-06-30 082146](https://github.com/user-attachments/assets/138b509e-cfa8-463d-bfd8-e302992f0b7c)
 
-## 🎯 Difficulty
+##  Difficulty
 
 **Medium**
 
@@ -73,7 +73,7 @@ Role-Based Authorization
 
 
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the Repository
 
@@ -89,10 +89,10 @@ npm install
 npm start
 
  API Endpoints
-🔐 All /api routes require Authorization header:
+ All /api routes require Authorization header:
 Authorization: Bearer <accessToken>
 
-🔸 Register a New User
+ Register a New User
 POST /register
 {
   "username": "user1",
@@ -129,17 +129,17 @@ GET /api/todos
 
 ✔️ Returns to-dos owned by the logged-in user.
 
-🔹 Delete a To-Do
+ Delete a To-Do
 DELETE /api/todos/:id
 
 ✔️ Only allows deletion if the to-do belongs to the user.
 
-👑 Admin Only: View All To-Dos
+ Admin Only: View All To-Dos
 GET /api/admin/all-todos
 
 ✔️ Only accessible to users with role: "admin"
 
-🔐 How We Ensure Data Access Control
+ How We Ensure Data Access Control
 When a user logs in, we issue a JWT containing their id, username, and role.
 
 Middleware verifies the token and attaches the user data to req.user.
@@ -148,14 +148,14 @@ Every /api/todos route filters or checks using req.user.id.
 
 Admin routes use an additional authorizeAdmin middleware to verify the user’s role.
 
-🧾 Example Test Data for To-Dos
+ Example Test Data for To-Dos
 
 { "task": "Learn JWT auth" }
 { "task": "Buy groceries" }
 { "task": "Read middleware documentation" }
 { "task": "Deploy app to Render" }
 { "task": "Review pull requests" }
-✅ How to Test with Postman
+ How to Test with Postman
 Register and login to receive an accessToken
 
 For protected routes, include this in headers:
