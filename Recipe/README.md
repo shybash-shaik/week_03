@@ -23,19 +23,6 @@ A React web application that allows users to search for recipes using an externa
 - **Storage**: localStorage
 ---
 
-## 🚀 How to Run the Project Locally
-
-### 1. Clone the Repository
-
-```bash
-1.git clone https://github.com/your-username/your-combined-repo.git
-cd your-combined-repo/recipe
-
-2. Install Dependencies
-npm install
-3. Start the Development Server
-npm run dev
-
 Part 1: Easy Features
 
 ![Screenshot 2025-06-30 072115](https://github.com/user-attachments/assets/76d29e99-a756-4140-80c5-27165e9dbb94)
@@ -53,3 +40,16 @@ Part 2: Medium Features
 Part 3: Hard Features
 
 ![Screenshot 2025-06-30 072917](https://github.com/user-attachments/assets/cf85e325-16a8-4b7a-bff9-4451479f19a6)
+
+## 🚀 How to Run the Project Locally
+
+### 1. Clone the Repository
+
+```bash
+1.git clone https://github.com/your-username/your-combined-repo.git
+cd your-combined-repo/recipe
+
+2. Install Dependencies
+npm install
+3. Start the Development Server
+npm run dev
